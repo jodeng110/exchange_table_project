@@ -1,0 +1,224 @@
+@charset "UTF-8";
+body, input, select {
+  font-family: '나눔고딕', NanumGothic, '맑은 고딕', Malgun Gothic, Helvetica;
+  height: 100%; }
+
+a {
+  text-decoration: none; }
+
+.exchangeDiv {
+  height: 222px;
+  background-color: #fcfcfc;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px; }
+
+.title {
+  font-weight: bold;
+  font-size: 16px;
+  padding-bottom: 20px; }
+
+.tbl {
+  width: 100%;
+  min-width: 383px;
+  border-top: 1px solid #eeefef; }
+  .tbl th {
+    font-weight: normal;
+    color: #7f828f;
+    border-bottom: 1px solid #eeefef; }
+    .tbl th:first-child {
+      border-right: 1px solid #eeefef; }
+  .tbl td {
+    border-bottom: 1px solid #eeefef; }
+    .tbl td:first-child {
+      padding-left: 10px;
+      border-right: 1px solid #eeefef; }
+
+.selectPanel {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 68px;
+  border: 2px solid #cacaca;
+  border-radius: 4px;
+  background-color: #ffffff; }
+
+.select {
+  width: 123px;
+  height: 63px;
+  float: left;
+  padding-left: 35px;
+  padding-top: 5px;
+  border-right: 2px solid #cacaca;
+  background: white;
+  background: -moz-linear-gradient(top, white 0%, #f6f6f6 47%, #ededed 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, white), color-stop(47%, #f6f6f6), color-stop(100%, #ededed));
+  background: -webkit-linear-gradient(top, white 0%, #f6f6f6 47%, #ededed 100%);
+  background: -o-linear-gradient(top, white 0%, #f6f6f6 47%, #ededed 100%);
+  background: -ms-linear-gradient(top, white 0%, #f6f6f6 47%, #ededed 100%);
+  background: linear-gradient(to bottom, white 0%, #f6f6f6 47%, #ededed 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=0 ); }
+  .select select {
+    font-size: 16px;
+    border-style: none;
+    background: transparent;
+    width: 120px;
+    height: 30px; }
+
+.resultPanel {
+  position: relative;
+  height: 68px;
+  display: inline-block;
+  float: right; }
+  .resultPanel div {
+    width: 100%;
+    text-align: right; }
+    .resultPanel div input[type="text"] {
+      display: block;
+      width: 100%;
+      height: 32px;
+      font-size: 30px;
+      border-style: none;
+      text-align: right; }
+      .resultPanel div input[type="text"]:focus {
+        outline: none; }
+  .resultPanel .result {
+    font-size: 14px;
+    font-weight: bold;
+    color: #656873; }
+
+.comparePreviousPlus {
+  color: #f43636; }
+
+.comparePreviousMinus {
+  color: #158de1; }
+
+.icon {
+  display: inline-block;
+  overflow: hidden;
+  width: 10px;
+  height: 8px;
+  margin-right: 3px;
+  background: url(https://ssl.pstatic.net/sstatic/keypage/lifesrch/exchange/im/im_list.png) no-repeat 0 -95px;
+  background-size: 16px 125px;
+  line-height: 100em;
+  text-indent: -10000px;
+  vertical-align: 1px; }
+  .icon.plus {
+    background-position: 0 0; }
+  .icon.minus {
+    background-position: 0 -23px; }
+  .icon.equal {
+    width: 16px;
+    height: 14px;
+    background-position: 0 -111px; }
+
+.equalDiv {
+  width: 100%;
+  line-height: 25px;
+  text-align: center; }
+  .equalDiv span {
+    height: 25px;
+    margin: 0 auto; }
+
+.flag {
+  top: 10px;
+  left: 7px;
+  overflow: hidden;
+  position: absolute;
+  width: 25px;
+  height: 17px;
+  background: url(https://ssl.pstatic.net/sstatic/keypage/lifesrch/exchange/im/bg_flag.png) no-repeat 0 0;
+  background-size: 145px 337px; }
+  .flag.KWR {
+    background-position: 0 0; }
+  .flag.USD {
+    background-position: 0 -32px; }
+  .flag.JPY {
+    background-position: 0 -64px; }
+  .flag.EUR {
+    background-position: 0 -320px; }
+  .flag.CNY {
+    background-position: 0 -96px; }
+  .flag.AUD {
+    background-position: 0 -128px; }
+  .flag.CAD {
+    background-position: 0 -192px; }
+  .flag.GBP {
+    background-position: 0 -160px; }
+  .flag.PHP {
+    background-position: 0 -224px; }
+  .flag.HKD {
+    background-position: 0 -256px; }
+  .flag.NZD {
+    background-position: -120px -256px; }
+  .flag.THB {
+    background-position: 0 -288px; }
+  .flag.SGD {
+    background-position: -40px 0; }
+  .flag.INR {
+    background-position: -40px -32px; }
+  .flag.BRL {
+    background-position: -40px -64px; }
+  .flag.TWD {
+    background-position: -40px -96px; }
+  .flag.MYR {
+    background-position: -40px -128px; }
+  .flag.CHF {
+    background-position: -40px -160px; }
+  .flag.VND {
+    background-position: -40px -192px; }
+  .flag.RUB {
+    background-position: -40px -224px; }
+  .flag.IDR {
+    background-position: -40px -256px; }
+  .flag.BDT {
+    background-position: -40px -288px; }
+  .flag.SEK {
+    background-position: -40px -320px; }
+  .flag.NOK {
+    background-position: -80px 0; }
+  .flag.ZAR {
+    background-position: -120px -288px; }
+  .flag.HUF {
+    background-position: -80px -32px; }
+  .flag.MXN {
+    background-position: -80px -64px; }
+  .flag.KWD {
+    background-position: -80px -96px; }
+  .flag.DKK {
+    background-position: -80px -128px; }
+  .flag.EGP {
+    background-position: -80px -160px; }
+  .flag.PLN {
+    background-position: -80px -192px; }
+  .flag.SAR {
+    background-position: -80px -224px; }
+  .flag.ILS {
+    background-position: -80px -256px; }
+  .flag.PKR {
+    background-position: -80px -288px; }
+  .flag.BHD {
+    background-position: -80px -320px; }
+  .flag.JOD {
+    background-position: -120px 0; }
+  .flag.BND {
+    background-position: -120px -32px; }
+  .flag.AED {
+    background-position: -120px -64px; }
+  .flag.MNT {
+    background-position: -120px -96px; }
+  .flag.KZT {
+    background-position: -120px -128px; }
+  .flag.TRY {
+    background-position: -120px -160px; }
+  .flag.CZK {
+    background-position: -120px -192px; }
+  .flag.QAR {
+    background-position: -120px -224px; }
+  .flag.CLP {
+    background-position: -120px -256px; }
+  .flag.OMR {
+    background-position: -120px -288px; }
+
+/*# sourceMappingURL=style.css.map */
