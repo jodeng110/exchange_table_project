@@ -1,4 +1,4 @@
-# nts_homework
+# Exchange Table Width AngularJS
 환율 정보 UI
 
 ## 개요
